@@ -54,9 +54,9 @@
       <Project>{C4881468-A527-4533-9E72-A9DF38C6A21E}</Project>
       <Name>Songbook.Win.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Songbook.Win.Persistent\Songbook.Win.Persistent.csproj">
-      <Project>{29364642-4460-4531-BB81-72BA88E1762C}</Project>
-      <Name>Songbook.Win.Persistent</Name>
+    <ProjectReference Include="..\Songbook.Win.Lib\Songbook.Win.Lib.csproj">
+      <Project>{c12c80b3-4de1-4dd0-b7f8-99e50741175e}</Project>
+      <Name>Songbook.Win.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

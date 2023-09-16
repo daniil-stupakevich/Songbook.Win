@@ -59,11 +59,13 @@
     <Compile Include="Models\Domain\Enum\VerseType.cs" />
     <Compile Include="Models\Domain\Language.cs" />
     <Compile Include="Models\Domain\Song.cs" />
-    <Compile Include="Models\Domain\SongbookDAL.cs" />
+    <Compile Include="Models\Domain\SongbookImportModel.cs" />
+    <Compile Include="Models\Domain\SongbookModel.cs" />
     <Compile Include="Models\Domain\Verse.cs" />
     <Compile Include="Profiles\AtmosphereToDomainProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Import\AtmposphereImportService.cs" />
+    <Compile Include="Services\Import\Interfaces\ISongOfGodImportService.cs" />
     <Compile Include="Services\Import\SongOfGodImportService.cs" />
   </ItemGroup>
   <ItemGroup>

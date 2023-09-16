@@ -1,20 +1,24 @@
 ﻿using Songbook.Win.Core.Models.Domain;
 using Songbook.Win.Core.Models.Domain.Enum;
+using Songbook.Win.Core.Services.Import.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace Songbook.Win.Core.Services.Import
 {
-    public class SongOfGodImportService
+    public class SongOfGodImportService : ISongOfGodImportService
     {
-        public SongbookDAL ReadSongBookFromSOG(string path)
+        public SongbookModel ReadSongBookFromSOG(SongbookImportModel viewSongbook, string path)
         {
-            SongbookDAL songbook = new SongbookDAL()
+            SongbookModel result = new SongbookModel()
             {
-                Name = "s",
+                Name = viewSongbook.Name,
+                Description = viewSongbook.Description,
+                LanguageId = viewSongbook.LanguageId,
                 Songs = new List<Song>()
             };
 
@@ -54,10 +58,10 @@ namespace Songbook.Win.Core.Services.Import
                 }
 
                 song.Verses = song.Verses.GroupBy(p => p.VerseText).Select(g => g.First()).ToList();
-                songbook.Songs.Add(song);
+                result.Songs.Add(song);
             }
 
-            return songbook;
+            return result;
         }
 
         private string GetKeyChordFromString(string text) 

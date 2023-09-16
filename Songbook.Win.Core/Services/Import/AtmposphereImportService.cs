@@ -38,16 +38,16 @@ namespace Songbook.Win.Core.Services.Import
             return langs;
         }
 
-        public async Task<IEnumerable<SongbookDAL>> GetAvailiableSongBooksAsync() 
+        public async Task<IEnumerable<SongbookModel>> GetAvailiableSongBooksAsync() 
         {
-            IEnumerable<SongbookDAL> songbooks = null;
+            IEnumerable<SongbookModel> songbooks = null;
             var response = await _httpClient.GetAsync("https://api.atmosphereapp.ru/songbooks");
             if (response.IsSuccessStatusCode)
             {
                 // Read the response content as a string
                 var content = await response.Content.ReadAsStringAsync();
                 var songbooksAtm = JsonConvert.DeserializeObject<IEnumerable<SongbookAtm>>(content);
-                songbooks = _mapper.Map<IEnumerable<SongbookDAL>>(songbooksAtm);
+                songbooks = _mapper.Map<IEnumerable<SongbookModel>>(songbooksAtm);
             }
 
 

@@ -9,7 +9,7 @@ namespace Songbook.Win.Core.Profiles
     {
         public AtmosphereToDomainProfile()
         {
-            CreateMap<SongbookAtm, SongbookDAL>()
+            CreateMap<SongbookAtm, SongbookModel>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.LanguageId, opt => opt.MapFrom(src => src.LanguageId))
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))

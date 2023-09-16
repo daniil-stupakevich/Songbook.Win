@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{84BF8886-3D3
 		CreateTables.sql = CreateTables.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songbook.Win.Lib", "Songbook.Win.Lib\Songbook.Win.Lib.csproj", "{C12C80B3-4DE1-4DD0-B7F8-99E50741175E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{F2A679B3-C251-45E6-B2CB-1C292AC2C376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2A679B3-C251-45E6-B2CB-1C292AC2C376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2A679B3-C251-45E6-B2CB-1C292AC2C376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12C80B3-4DE1-4DD0-B7F8-99E50741175E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12C80B3-4DE1-4DD0-B7F8-99E50741175E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12C80B3-4DE1-4DD0-B7F8-99E50741175E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12C80B3-4DE1-4DD0-B7F8-99E50741175E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

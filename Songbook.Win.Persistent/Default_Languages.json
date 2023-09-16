@@ -1,0 +1,82 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Français",
+    "code": "fr"
+  },
+  {
+    "id": 2,
+    "name": "English",
+    "code": "en"
+  },
+  {
+    "id": 3,
+    "name": "Русский",
+    "code": "ru"
+  },
+  {
+    "id": 4,
+    "name": "Kirundi",
+    "code": "rn"
+  },
+  {
+    "id": 5,
+    "name": "Lingala",
+    "code": "ln"
+  },
+  {
+    "id": 6,
+    "name": "Polski",
+    "code": "pl"
+  },
+  {
+    "id": 7,
+    "name": "čeština",
+    "code": "cz"
+  },
+  {
+    "id": 8,
+    "name": "Kiswahili",
+    "code": "sw"
+  },
+  {
+    "id": 9,
+    "name": "Suomi",
+    "code": "fi"
+  },
+  {
+    "id": 10,
+    "name": "Српски",
+    "code": "sr"
+  },
+  {
+    "id": 11,
+    "name": "Slovenský",
+    "code": "sk"
+  },
+  {
+    "id": 12,
+    "name": "Hrvatski",
+    "code": "hr"
+  },
+  {
+    "id": 13,
+    "name": "Tshiluba",
+    "code": "lua"
+  },
+  {
+    "id": 14,
+    "name": "Português",
+    "code": "pt"
+  },
+  {
+    "id": 15,
+    "name": "Română",
+    "code": "ro"
+  },
+  {
+    "id": 16,
+    "name": "Lietuvių",
+    "code": "lt"
+  }
+]
